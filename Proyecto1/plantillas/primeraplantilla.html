@@ -1,0 +1,54 @@
+<html>
+    <body>
+            
+    <h1>
+    Usando plantillas 
+    </h1>
+    {# comentario de una sola linea#}
+
+    {% comment %}
+    COMENTARIO DE VARIAS LINEAS
+    {% endcomment %}
+    {% if nombre_persona == 'Fernando con class' %}
+
+    <p> curso lo imparte el bla bla bla</p>
+
+    {% else %}
+    <p>el curso lo imparte el profesor jurafales    </p>
+
+    {% endif %}
+    <p>Mi nombre es: {{nombre_persona}} y el apellidio es {{apellido_persona}} </p>
+    <p>fecha y hora actual {{fecha.day}}</p>
+    <p>{{temas}}</p>
+    <p>{{temas.0}}</p>
+    <p>{{temas.1}}</p>
+    <p>{{temas.2}}</p>
+    <p>{{temas.3}}</p>
+    <p>{{temas.4}}</p>
+
+    <p><strong>Temas del Curso </strong></p>
+
+    <p>
+    <lu>
+        {% if temas %}
+            {% for elTema in temas %}
+                <li>{{elTema}}</li>
+
+            {% endfor %}
+        {% else %}
+            <li> No hay elementos que mostrar   </li>
+        {% endif %}
+
+
+    </lu>
+
+
+
+
+
+    </p>
+
+    </body>
+    </html>
+    
+    
