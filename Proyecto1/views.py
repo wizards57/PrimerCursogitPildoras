@@ -12,7 +12,7 @@ class Persona (object):
 
 def saludo(request): #primera vista 
     p1=Persona("Fernando con class", "Apellido Con class")
-    
+    #parrafo agregado
     #nombre="Fernando"
     #apellido="Mariscal"
     temasdelCurso=["Plantillas", "Modelo", "formularios", "Vistas", "Despliegue"]
